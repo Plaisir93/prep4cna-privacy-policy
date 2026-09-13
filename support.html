@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Prep4CNA Support</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Get help with the Prep4CNA app — contact support and answers to common questions." />
+<link rel="icon" type="image/png" href="favicon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    color-scheme: light dark;
+    --paper: #F7F1E4;
+    --surface: #FFFFFF;
+    --ink: #221D18;
+    --ink-soft: #7A7168;
+    --ink-faint: #A79C8C;
+    --line: #EAE1D2;
+    --line-soft: #F1EADC;
+    --accent: #DA6A4C;
+    --accent-ink: #C25738;
+    --accent-soft: #F6E1D9;
+    --shadow: 0 1px 2px rgba(34,29,24,0.04), 0 6px 20px rgba(34,29,24,0.06);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #1C1712;
+      --surface: #26201A;
+      --ink: #F3ECE0;
+      --ink-soft: #BFB2A0;
+      --ink-faint: #85796A;
+      --line: #3A3128;
+      --line-soft: #2E2720;
+      --accent: #EA8A66;
+      --accent-ink: #F4AF92;
+      --accent-soft: #3A281F;
+      --shadow: 0 1px 2px rgba(0,0,0,0.25), 0 6px 20px rgba(0,0,0,0.4);
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #1C1712;
+    --surface: #26201A;
+    --ink: #F3ECE0;
+    --ink-soft: #BFB2A0;
+    --ink-faint: #85796A;
+    --line: #3A3128;
+    --line-soft: #2E2720;
+    --accent: #EA8A66;
+    --accent-ink: #F4AF92;
+    --accent-soft: #3A281F;
+    --shadow: 0 1px 2px rgba(0,0,0,0.25), 0 6px 20px rgba(0,0,0,0.4);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 16.5px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 5rem;
+  }
+  h1, h2 {
+    font-family: "Public Sans", sans-serif;
+    color: var(--ink);
+    line-height: 1.25;
+    text-wrap: balance;
+    margin: 0;
+  }
+  p { margin: 0 0 1em; max-width: 66ch; }
+  p:last-child { margin-bottom: 0; }
+  a { color: var(--accent-ink); text-decoration-underline; text-decoration-color: var(--accent); text-underline-offset: 2px; }
+  a:hover { text-decoration-thickness: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+
+  header.doc-head {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2.5rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .mark {
+    flex-shrink: 0;
+    width: 52px;
+    height: 52px;
+    border-radius: 16px;
+    background: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mark img { width: 26px; height: 26px; }
+  header.doc-head h1 {
+    font-size: clamp(1.6rem, 3.4vw, 2.05rem);
+    font-weight: 800;
+  }
+  .lede {
+    margin-top: 0.9rem;
+    font-size: 1.02rem;
+    color: var(--ink-soft);
+    max-width: 60ch;
+  }
+
+  .contact-card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 1.4rem 1.5rem;
+    box-shadow: var(--shadow);
+    margin-bottom: 2.75rem;
+  }
+  .contact-card .label {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--ink-faint);
+    margin-bottom: 0.5rem;
+  }
+  .contact-card a {
+    font-size: 1.15rem;
+    font-weight: 600;
+  }
+
+  section { margin-bottom: 2.25rem; }
+  section h2 { font-size: 1.15rem; font-weight: 700; margin-bottom: 0.6rem; }
+
+  footer.colophon {
+    border-top: 1px solid var(--line);
+    padding-top: 1.5rem;
+    margin-top: 3rem;
+    font-size: 0.82rem;
+    color: var(--ink-faint);
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="doc-head">
+    <div class="mark" aria-hidden="true">
+      <img src="glyph.png" alt="" width="26" height="26" />
+    </div>
+    <div>
+      <h1>Prep4CNA — Support</h1>
+      <p class="lede">
+        Need help with the app, found a bug, or have a question about a quiz question?
+        Reach out — we read every message.
+      </p>
+    </div>
+  </header>
+
+  <div class="contact-card">
+    <div class="label">Contact</div>
+    <a href="mailto:info@ebold.tech">info@ebold.tech</a>
+  </div>
+
+  <section>
+    <h2>Common questions</h2>
+    <p><strong>How do I reset my progress?</strong><br>
+      Go to the Profile tab → Reset Progress. This clears your saved answers and streak
+      from your device immediately.</p>
+    <p><strong>I think a question or answer is wrong — what do I do?</strong><br>
+      Email us at the address above with the question text (or a screenshot) and we'll
+      review it. Quiz content updates automatically once corrected, no app update needed.</p>
+    <p><strong>How do I remove my leaderboard entry?</strong><br>
+      Email us with your leaderboard nickname and we'll remove it.</p>
+    <p><strong>Does the app work offline?</strong><br>
+      You'll need an internet connection to load quiz content, but your progress is
+      saved locally on your device.</p>
+  </section>
+
+  <section>
+    <h2>Privacy</h2>
+    <p>
+      For details on what information the app collects and how it's used, see our
+      <a href="index.html">Privacy Policy</a>.
+    </p>
+  </section>
+
+  <footer class="colophon">
+    <p>Prep4CNA · Support</p>
+  </footer>
+</div>
+</body>
+</html>

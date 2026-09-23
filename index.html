@@ -334,8 +334,8 @@
     <div>
       <h1>Prep4CNA — Privacy Policy</h1>
       <div class="doc-meta">
-        <span>Effective date: <span class="mono">September 9, 2026</span></span>
-        <span>App version: <span class="mono">1.0.0</span></span>
+        <span>Effective date: <span class="mono">September 23, 2026</span></span>
+        <span>App version: <span class="mono">1.0.1</span></span>
       </div>
       <p class="lede">
         Prep4CNA is a multilingual (currently English + Haitian Creole) study app for
@@ -371,8 +371,8 @@
     <div class="fact">
       <span class="dot"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
       <div>
-        <div class="fact-title">No ads, no trackers</div>
-        <div class="fact-body">No advertising network, no analytics SDK, no third-party tracking of any kind.</div>
+        <div class="fact-title">No ads, no ad tracking</div>
+        <div class="fact-body">We use basic, anonymous usage analytics to improve the app — never ads or ad-tracking identifiers.</div>
       </div>
     </div>
     <div class="fact">
@@ -459,6 +459,22 @@
       Your individual quiz answers, which questions you got right or wrong, and your device
       identifier are never shown on the leaderboard — only the aggregate numbers above.
     </p>
+
+    <h3>2.4 — Basic usage analytics</h3>
+    <p>
+      The app uses <strong>Google Analytics for Firebase</strong> to understand, in
+      aggregate, how the app is actually used — which screens people visit, how long a
+      typical session lasts, and which features get used most. This happens automatically
+      for every install; there's currently no in-app toggle to turn it off. It's tied to an
+      anonymous per-install identifier, separate from the one described in Section 2.2, and
+      is never linked to a name, email, or any other information that could identify you.
+    </p>
+    <p>
+      This analytics collection does <strong>not</strong> include an advertising identifier
+      (Apple's IDFA or Google's Advertising ID) — we've specifically configured it not to.
+      No ads are shown in the app, and this data is not used for advertising, ad
+      personalization, or shared onward with anyone for their own purposes.
+    </p>
   </section>
 
   <section id="not-collect">
@@ -468,9 +484,13 @@
       <li>Your name, email address, or phone number</li>
       <li>Your location</li>
       <li>Your contacts, photos, camera, or microphone</li>
-      <li>Advertising identifiers, and it shows no advertising</li>
-      <li>Analytics or crash-tracking data of any kind — no third-party analytics SDK is included in the app</li>
+      <li>Advertising identifiers (Apple's IDFA or Google's Advertising ID) — we've specifically turned this off, and the app shows no advertising</li>
+      <li>Crash logs or diagnostic data</li>
     </ul>
+    <p>
+      We do collect basic, anonymous usage analytics — see Section 2.4 for exactly what
+      that includes and why it's separate from everything else on this list.
+    </p>
   </section>
 
   <section id="use">
@@ -481,6 +501,7 @@
       <li>Show quiz content (questions, categories, app text) that stays current without needing an app update</li>
       <li>Display leaderboard rankings, only for people who've opted in</li>
       <li>Show a required-update notice if a critical fix is ever released</li>
+      <li>Understand overall app usage (Section 2.4), so we know what's working and what to fix or improve next</li>
     </ul>
   </section>
 
@@ -488,10 +509,10 @@
     <div class="sec-head"><span class="sec-num">5</span><h2>Who we share information with</h2></div>
     <p>
       We do not sell your information, and we do not share it with advertisers or data
-      brokers. The app's content and optional leaderboard are hosted on
-      <strong>Google Firebase</strong>, which acts as our infrastructure provider —
-      the same way a filing cabinet stores paper without reading it. Firebase's own privacy
-      terms are available at
+      brokers. The app's content, optional leaderboard, and usage analytics (Section 2.4)
+      all run on <strong>Google Firebase</strong>, which acts as our infrastructure
+      provider — the same way a filing cabinet stores paper without reading it. Firebase's
+      own privacy terms are available at
       <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a>.
     </p>
   </section>
@@ -560,7 +581,7 @@
   </section>
 
   <footer class="colophon">
-    <p>Prep4CNA · Privacy Policy · Effective September 9, 2026</p>
+    <p>Prep4CNA · Privacy Policy · Effective September 23, 2026</p>
   </footer>
 </div>
 </body>

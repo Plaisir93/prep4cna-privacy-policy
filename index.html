@@ -334,8 +334,8 @@
     <div>
       <h1>Prep4CNA — Privacy Policy</h1>
       <div class="doc-meta">
-        <span>Effective date: <span class="mono">September 23, 2026</span></span>
-        <span>App version: <span class="mono">1.0.1</span></span>
+        <span>Effective date: <span class="mono">October 8, 2026</span></span>
+        <span>App version: <span class="mono">1.2.0</span></span>
       </div>
       <p class="lede">
         Prep4CNA is a multilingual (currently English + Haitian Creole) study app for
@@ -389,6 +389,20 @@
         <div class="fact-body">A public nickname and score are only shared if you choose to join the leaderboard.</div>
       </div>
     </div>
+    <div class="fact">
+      <span class="dot"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <div>
+        <div class="fact-title">Notifications are opt-in</div>
+        <div class="fact-body">Nothing is sent to your phone unless you turn notifications on, and you can turn them off any time.</div>
+      </div>
+    </div>
+    <div class="fact">
+      <span class="dot"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <div>
+        <div class="fact-title">Job links open other websites</div>
+        <div class="fact-body">Listings come from Adzuna. Tapping one opens a site we don't control, so we say so plainly (Section 2.6).</div>
+      </div>
+    </div>
   </div>
 
   <nav class="toc" aria-label="Table of contents">
@@ -422,9 +436,10 @@
 
     <h3>2.1 — Stored only on your device</h3>
     <p>
-      As you use the app, your answers to quiz questions, your accuracy, and your daily
-      streak are saved in local storage on your phone. This information never leaves your
-      device unless you choose to join the leaderboard (see 2.3).
+      As you use the app, your answers to quiz questions, your accuracy, your daily
+      streak, and your Exam Simulator results are saved in local storage on your phone.
+      This information never leaves your device unless you choose to join the leaderboard
+      (see 2.3).
     </p>
 
     <h3>2.2 — An anonymous device identifier</h3>
@@ -475,6 +490,52 @@
       No ads are shown in the app, and this data is not used for advertising, ad
       personalization, or shared onward with anyone for their own purposes.
     </p>
+
+    <h3>2.5 — Push notifications (optional)</h3>
+    <p>
+      Notifications are <strong>off until you turn them on</strong> from Profile →
+      Notifications, and your phone's own permission prompt appears first. If you do turn
+      them on, <strong>Firebase Cloud Messaging</strong> gives your phone a push
+      registration token so a message can reach it, and your phone is subscribed to a
+      single shared "announcements" topic — so everyone who opts in receives the same
+      messages (for example, a new app version or important CNA exam news). We don't
+      store this token in our own database, we don't keep a list of who has notifications
+      on, and we can't send a message to one particular person. Notifications are
+      delivered through Apple's and Google's own push services. You can turn them off
+      any time from Profile → Notifications or in your phone's settings.
+    </p>
+
+    <h3>2.6 — Job listings</h3>
+    <p>
+      The Jobs tab shows recent CNA job listings supplied by
+      <strong>Adzuna</strong> (adzuna.com). Our own systems collect the listings and store
+      them in our database; your phone only reads them, so <strong>nothing about you is
+      sent to Adzuna</strong> to get them. The state you pick, the jobs you save, and the
+      lists you've recently viewed are kept on your device. Picking a state is just a
+      choice from a list — the app never reads your location.
+    </p>
+    <p>Two things do involve other companies directly:</p>
+    <ul>
+      <li>The <strong>Adzuna logo</strong> shown on each listing is loaded from Adzuna's content delivery servers, so those servers receive your device's IP address and the usual technical details of any web request.</li>
+      <li>Tapping a listing opens <strong>Adzuna's page — and then usually the employer's own site —</strong> in a browser window inside the app. Those sites are run by other companies under their own privacy policies, and we don't receive or see what you do on them.</li>
+    </ul>
+    <div class="callout flag">
+      <span class="callout-label">Stay safe</span>
+      <p>
+        Prep4CNA does not employ, and cannot vouch for, the employers in these listings.
+        Never pay anyone to apply for a job, to be hired, or for training or equipment — a
+        real employer will not ask you to.
+      </p>
+    </div>
+
+    <h3>2.7 — Reporting a job listing</h3>
+    <p>
+      Each listing has a <strong>Report</strong> link. It opens <em>your own</em> email app
+      with a message to us, pre-filled with the listing's ID, title, employer, place and
+      link. The message is sent from your email account, so we receive your email address
+      and anything you choose to add. We use it only to review the listing and, if needed,
+      reply to you.
+    </p>
   </section>
 
   <section id="not-collect">
@@ -489,7 +550,9 @@
     </ul>
     <p>
       We do collect basic, anonymous usage analytics — see Section 2.4 for exactly what
-      that includes and why it's separate from everything else on this list.
+      that includes and why it's separate from everything else on this list. If you send us
+      an email to report a job listing (Section 2.7), we receive the email address you send
+      it from.
     </p>
   </section>
 
@@ -501,6 +564,9 @@
       <li>Show quiz content (questions, categories, app text) that stays current without needing an app update</li>
       <li>Display leaderboard rankings, only for people who've opted in</li>
       <li>Show a required-update notice if a critical fix is ever released</li>
+      <li>Send the push notifications you've chosen to turn on (Section 2.5)</li>
+      <li>Show job listings for the state you pick, and remember your saved jobs on your device (Section 2.6)</li>
+      <li>Review a job listing you've reported to us (Section 2.7)</li>
       <li>Understand overall app usage (Section 2.4), so we know what's working and what to fix or improve next</li>
     </ul>
   </section>
@@ -515,12 +581,21 @@
       own privacy terms are available at
       <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a>.
     </p>
+    <p>
+      Job listings come from <strong>Adzuna</strong>, and the pages you open from them
+      belong to Adzuna and to employers (Section 2.6). Push notifications travel through
+      Firebase Cloud Messaging and Apple's and Google's push services (Section 2.5). We do
+      not give any of these companies your quiz progress, exam results, leaderboard data, or
+      anything else described above as staying on your device.
+    </p>
   </section>
 
   <section id="choices">
     <div class="sec-head"><span class="sec-num">6</span><h2>Your choices &amp; controls</h2></div>
     <ul>
-      <li><strong>Clear your local progress</strong> any time from Profile → Reset Progress. This immediately and permanently erases your saved answers and streak from your device.</li>
+      <li><strong>Clear your local progress</strong> any time from Profile → Reset Progress. This immediately and permanently erases your saved answers, streak and exam results from your device.</li>
+      <li><strong>Turn notifications off</strong> any time from Profile → Notifications, or in your phone's settings.</li>
+      <li><strong>Remove a saved job</strong> by tapping its bookmark again. Saved jobs and your chosen state are also erased when you uninstall the app.</li>
       <li><strong>Leave the leaderboard off entirely</strong> by simply never setting a nickname — nothing about your device is ever shared publicly.</li>
       <li><strong>Request removal of your leaderboard entry</strong> by contacting us (Section 11) with your nickname. We'll remove it.</li>
     </ul>
@@ -539,8 +614,10 @@
     <div class="sec-head"><span class="sec-num">7</span><h2>Data retention</h2></div>
     <p>
       Local progress is retained on your device until you reset it or uninstall the app.
-      Leaderboard entries are retained until you request removal (Section 6) or the
-      leaderboard feature is discontinued.
+      Saved jobs, your chosen state and recently viewed job lists stay on your device until
+      you remove them or uninstall the app. Leaderboard entries are retained until you
+      request removal (Section 6) or the leaderboard feature is discontinued. Emails you
+      send to report a job listing are kept only as long as needed to review the listing.
     </p>
   </section>
 
@@ -557,8 +634,8 @@
     <p>
       Leaderboard data is protected by access rules that only allow a device to write its
       own entry, verified through the anonymous identifier described in Section 2.2 — no
-      one can edit or impersonate another person's score. Quiz content is readable by the
-      app but not editable by it. No method of transmission or storage is 100% secure, but
+      one can edit or impersonate another person's score. Quiz content and job listings are
+      readable by the app but not editable by it. No method of transmission or storage is 100% secure, but
       we don't collect anything more sensitive than a self-chosen nickname and a score.
     </p>
   </section>
@@ -575,13 +652,14 @@
   <section id="contact">
     <div class="sec-head"><span class="sec-num">11</span><h2>Contact us</h2></div>
     <p>
-      Questions about this policy, or a leaderboard removal request, can be sent to
+      Questions about this policy, a leaderboard removal request, or a job listing you'd like
+      us to review can be sent to
       <span class="fill">info@ebold.tech</span>
     </p>
   </section>
 
   <footer class="colophon">
-    <p>Prep4CNA · Privacy Policy · Effective September 23, 2026</p>
+    <p>Prep4CNA · Privacy Policy · Effective October 8, 2026</p>
   </footer>
 </div>
 </body>

@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Delete your Prep4CNA account</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="How to delete your Prep4CNA account and what happens to your data." />
+<link rel="icon" type="image/png" href="favicon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    color-scheme: light dark;
+    --paper: #F7F1E4;
+    --surface: #FFFFFF;
+    --ink: #221D18;
+    --ink-soft: #7A7168;
+    --ink-faint: #A79C8C;
+    --line: #EAE1D2;
+    --line-soft: #F1EADC;
+    --accent: #DA6A4C;
+    --accent-ink: #C25738;
+    --accent-soft: #F6E1D9;
+    --shadow: 0 1px 2px rgba(34,29,24,0.04), 0 6px 20px rgba(34,29,24,0.06);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #1C1712;
+      --surface: #26201A;
+      --ink: #F3ECE0;
+      --ink-soft: #BFB2A0;
+      --ink-faint: #85796A;
+      --line: #3A3128;
+      --line-soft: #2E2720;
+      --accent: #EA8A66;
+      --accent-ink: #F4AF92;
+      --accent-soft: #3A281F;
+      --shadow: 0 1px 2px rgba(0,0,0,0.25), 0 6px 20px rgba(0,0,0,0.4);
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #1C1712;
+    --surface: #26201A;
+    --ink: #F3ECE0;
+    --ink-soft: #BFB2A0;
+    --ink-faint: #85796A;
+    --line: #3A3128;
+    --line-soft: #2E2720;
+    --accent: #EA8A66;
+    --accent-ink: #F4AF92;
+    --accent-soft: #3A281F;
+    --shadow: 0 1px 2px rgba(0,0,0,0.25), 0 6px 20px rgba(0,0,0,0.4);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 16.5px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 5rem;
+  }
+  h1, h2 {
+    font-family: "Public Sans", sans-serif;
+    color: var(--ink);
+    line-height: 1.25;
+    text-wrap: balance;
+    margin: 0;
+  }
+  p { margin: 0 0 1em; max-width: 66ch; }
+  p:last-child { margin-bottom: 0; }
+  a { color: var(--accent-ink); text-decoration-underline; text-decoration-color: var(--accent); text-underline-offset: 2px; }
+  a:hover { text-decoration-thickness: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+
+  header.doc-head {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2.5rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .mark {
+    flex-shrink: 0;
+    width: 52px;
+    height: 52px;
+    border-radius: 16px;
+    background: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mark img { width: 26px; height: 26px; }
+  header.doc-head h1 {
+    font-size: clamp(1.6rem, 3.4vw, 2.05rem);
+    font-weight: 800;
+  }
+  .lede {
+    margin-top: 0.9rem;
+    font-size: 1.02rem;
+    color: var(--ink-soft);
+    max-width: 60ch;
+  }
+
+  .contact-card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 1.4rem 1.5rem;
+    box-shadow: var(--shadow);
+    margin-bottom: 2.75rem;
+  }
+  .contact-card .label {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--ink-faint);
+    margin-bottom: 0.5rem;
+  }
+  .contact-card a {
+    font-size: 1.15rem;
+    font-weight: 600;
+  }
+
+  section { margin-bottom: 2.25rem; }
+  section h2 { font-size: 1.15rem; font-weight: 700; margin-bottom: 0.6rem; }
+
+  footer.colophon {
+    border-top: 1px solid var(--line);
+    padding-top: 1.5rem;
+    margin-top: 3rem;
+    font-size: 0.82rem;
+    color: var(--ink-faint);
+  }
+  ol.steps { padding-left: 1.25rem; }
+  ol.steps li { margin-bottom: 0.5rem; }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="doc-head">
+    <div class="mark" aria-hidden="true">
+      <img src="glyph.png" alt="" width="26" height="26" />
+    </div>
+    <div>
+      <h1>Delete your Prep4CNA account</h1>
+      <p class="lede">
+        This page is for the <strong>Prep4CNA</strong> app. It explains how to delete your account
+        and exactly what is deleted and what is kept.
+      </p>
+    </div>
+  </header>
+
+  <div class="contact-card">
+    <div class="label">Contact</div>
+    <a href="mailto:info@ebold.tech">info@ebold.tech</a>
+  </div>
+
+  <section>
+    <h2>Delete your account in the app</h2>
+    <ol class="steps">
+      <li>Open Prep4CNA and go to the <strong>Profile</strong> tab.</li>
+      <li>Find the <strong>Account</strong> section and tap <strong>Delete account</strong>.</li>
+      <li>Read the message and tap <strong>Delete account</strong> again to confirm.</li>
+      <li>Sign in once more with the same Google or Apple account when asked. This proves the account is yours.</li>
+      <li>The account is deleted and you are signed out.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Can't open the app or can't sign in?</h2>
+    <p>
+      Email <a href="mailto:info@ebold.tech">info@ebold.tech</a> from the email address of the account
+      you want deleted, with the subject <em>Delete my Prep4CNA account</em>. We will delete it and
+      reply to confirm, within 30 days.
+    </p>
+  </section>
+
+  <section>
+    <h2>What is deleted</h2>
+    <ul>
+      <li>Your account record in our sign-in system (Firebase Authentication): your account ID, email address, name and profile photo (if Google provided them), and your sign-in method and dates. This is deleted immediately and permanently.</li>
+      <li>For accounts created with Apple, the Sign in with Apple connection to Prep4CNA is revoked, so it also disappears from your Apple ID settings.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>What is not deleted, and for how long</h2>
+    <ul>
+      <li><strong>Quiz progress on your phone</strong> (answers, streak, exam results, saved jobs). It was never uploaded and is not linked to your account. It stays on the phone until you tap <em>Profile → Reset Progress</em> or uninstall the app.</li>
+      <li><strong>Old leaderboard entries</strong> (a nickname and three score numbers) made in app versions before 1.3.0. They are not tied to your sign-in account. To have yours removed, email us your nickname and we will delete it.</li>
+      <li><strong>Anonymous usage statistics</strong> (Google Analytics for Firebase). They are tied to an anonymous per-install identifier, not to your name, email or account, and are kept by Google under its standard analytics retention settings. Uninstalling the app stops new data from being collected.</li>
+    </ul>
+    <p>
+      More detail is in our <a href="index.html">Privacy Policy</a>.
+    </p>
+  </section>
+
+  <footer class="colophon">
+    <p>Prep4CNA · Delete your account</p>
+  </footer>
+</div>
+</body>
+</html>

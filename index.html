@@ -334,14 +334,14 @@
     <div>
       <h1>Prep4CNA — Privacy Policy</h1>
       <div class="doc-meta">
-        <span>Effective date: <span class="mono">October 8, 2026</span></span>
-        <span>App version: <span class="mono">1.2.0</span></span>
+        <span>Effective date: <span class="mono">October 14, 2026</span></span>
+        <span>App version: <span class="mono">1.3.0</span></span>
       </div>
       <p class="lede">
         Prep4CNA is a multilingual (currently English + Haitian Creole) study app for
         Nursing Assistant exam prep. This page explains, in plain language, what
         information the app collects, why, and the choices you have — for every person who
-        installs it, whether or not you ever create a leaderboard nickname.
+        installs it, whether or not you sign in. Where something changed in version 1.3.0, the text says which versions it applies to.
       </p>
       <div class="callout">
         <span class="callout-label">Independent, unofficial app</span>
@@ -364,8 +364,8 @@
     <div class="fact">
       <span class="dot"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
       <div>
-        <div class="fact-title">No account, ever</div>
-        <div class="fact-body">No email, password, or real name is asked for or required to use the app.</div>
+        <div class="fact-title">Sign in with Google or Apple</div>
+        <div class="fact-body">The Daily Quiz works without it; the rest of the app asks you to sign in. We never see or store a password (Section 2.2).</div>
       </div>
     </div>
     <div class="fact">
@@ -385,8 +385,8 @@
     <div class="fact">
       <span class="dot"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
       <div>
-        <div class="fact-title">Leaderboard is opt-in</div>
-        <div class="fact-body">A public nickname and score are only shared if you choose to join the leaderboard.</div>
+        <div class="fact-title">The leaderboard is retired</div>
+        <div class="fact-body">Version 1.3.0 removed it. Old entries stay stored until you ask us to remove yours (Section 2.3).</div>
       </div>
     </div>
     <div class="fact">
@@ -401,6 +401,13 @@
       <div>
         <div class="fact-title">Job links open other websites</div>
         <div class="fact-body">Listings come from Adzuna. Tapping one opens a site we don't control, so we say so plainly (Section 2.6).</div>
+      </div>
+    </div>
+    <div class="fact">
+      <span class="dot"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <div>
+        <div class="fact-title">Skills videos play from YouTube</div>
+        <div class="fact-body">Opening a video loads YouTube's player inside the app, so YouTube sees that request (Section 2.8).</div>
       </div>
     </div>
   </div>
@@ -438,41 +445,66 @@
     <p>
       As you use the app, your answers to quiz questions, your accuracy, your daily
       streak, and your Exam Simulator results are saved in local storage on your phone.
-      This information never leaves your device unless you choose to join the leaderboard
-      (see 2.3).
+      This information stays on your device. It is not linked to your account (Section 2.2)
+      and is not uploaded.
     </p>
 
-    <h3>2.2 — An anonymous device identifier</h3>
+    <h3>2.2 — Your account (version 1.3.0 and later)</h3>
     <p>
-      The app assigns your device a random, anonymous identifier (via Firebase Anonymous
-      Authentication) the first time it needs one. This identifier is not linked to your
-      name, email, or any other personal information, and there is no sign-in screen — it
-      happens automatically in the background. It exists so that, if you join the
-      leaderboard, your device can update its own score without anyone else being able to
-      update it for you.
-    </p>
-
-    <h3>2.3 — Information you choose to share: the leaderboard</h3>
-    <p>
-      Joining the leaderboard is optional and requires one deliberate action: picking a
-      nickname. If you do, the following becomes visible to anyone using the app:
+      Home and the Daily Quiz work without an account. To use the rest of the app (topic
+      quizzes, the Exam Simulator, Vocabulary, Jobs, Clinical Skills videos and Profile)
+      you sign in with <strong>Google</strong> or, on iPhone, <strong>Apple</strong>. Google or Apple
+      checks who you are and tells <strong>Firebase Authentication</strong> (the Google service we
+      use to run sign-in) — <strong>we never see, ask for or store your password</strong>.
+      Firebase keeps this record for your account:
     </p>
     <div class="table-wrap">
       <table>
         <thead>
-          <tr><th>What's shared</th><th>Example</th><th>Who can see it</th></tr>
+          <tr><th>What</th><th>Where it comes from</th><th>What we use it for</th></tr>
         </thead>
         <tbody>
-          <tr><td>Your chosen nickname</td><td class="mono">"QuizWhiz23"</td><td>Anyone using the app</td></tr>
-          <tr><td>Total correct answers</td><td class="mono">142</td><td>Anyone using the app</td></tr>
-          <tr><td>Total questions answered</td><td class="mono">160</td><td>Anyone using the app</td></tr>
-          <tr><td>Longest daily streak</td><td class="mono">18 days</td><td>Anyone using the app</td></tr>
+          <tr><td>A random account ID</td><td>Created by Firebase</td><td>Recognizing you when you come back</td></tr>
+          <tr><td>Email address</td><td>Google or Apple (Apple can give a private relay address if you choose Hide My Email)</td><td>Shown on your Profile so you can see which account you used</td></tr>
+          <tr><td>Name and profile photo</td><td>Google only — they come with Google's sign-in response and are saved in your Firebase account record. When you sign in with Apple, the app asks Apple for your email only.</td><td>Not displayed or used by the app</td></tr>
+          <tr><td>Sign-in method and dates</td><td>Firebase</td><td>Keeping the account working</td></tr>
         </tbody>
       </table>
     </div>
     <p>
-      Your individual quiz answers, which questions you got right or wrong, and your device
-      identifier are never shown on the leaderboard — only the aggregate numbers above.
+      We do not use this information for advertising or marketing, and we do not sell it
+      (Section 5). Your quiz answers, streak and exam results are <strong>not</strong> linked to your
+      account — they stay on your phone (Section 2.1). You can sign out, or delete the account
+      completely, from Profile → Account (Section 6). Versions before 1.3.0 have no sign-in
+      screen; they create the anonymous identifier described in Section 2.3.
+    </p>
+
+    <h3>2.3 — The leaderboard (retired in version 1.3.0)</h3>
+    <p>
+      Versions before 1.3.0 had an optional leaderboard. Those versions gave each device a
+      random, anonymous identifier (through Firebase Anonymous Authentication) so the
+      device could update its own score, and people who picked a nickname shared the
+      following with others using those versions:
+    </p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>What was shared</th><th>Example</th><th>Who could see it</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Your chosen nickname</td><td class="mono">"QuizWhiz23"</td><td>People using versions before 1.3.0</td></tr>
+          <tr><td>Total correct answers</td><td class="mono">142</td><td>People using versions before 1.3.0</td></tr>
+          <tr><td>Total questions answered</td><td class="mono">160</td><td>People using versions before 1.3.0</td></tr>
+          <tr><td>Longest daily streak</td><td class="mono">18 days</td><td>People using versions before 1.3.0</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>
+      Version 1.3.0 removes the leaderboard: it no longer shows, reads or updates these
+      entries. We have <strong>not deleted</strong> the entries that already exist — they remain stored
+      in our database for now. Your individual quiz answers and your device identifier were
+      never part of them. To have your entry removed, write to us with your nickname
+      (Section 11).
     </p>
 
     <h3>2.4 — Basic usage analytics</h3>
@@ -481,8 +513,8 @@
       aggregate, how the app is actually used — which screens people visit, how long a
       typical session lasts, and which features get used most. This happens automatically
       for every install; there's currently no in-app toggle to turn it off. It's tied to an
-      anonymous per-install identifier, separate from the one described in Section 2.2, and
-      is never linked to a name, email, or any other information that could identify you.
+      anonymous per-install identifier, separate from your account (Section 2.2), and is not
+      linked to your name or email.
     </p>
     <p>
       This analytics collection does <strong>not</strong> include an advertising identifier
@@ -536,13 +568,25 @@
       and anything you choose to add. We use it only to review the listing and, if needed,
       reply to you.
     </p>
+
+    <h3>2.8 — Clinical Skills videos (YouTube)</h3>
+    <p>
+      The Clinical Skills videos are hosted on <strong>YouTube</strong>. When you open one, the app
+      loads YouTube's player inside the app, using YouTube's privacy-enhanced address
+      (youtube-nocookie.com). YouTube and Google therefore receive your device's IP address
+      and the usual technical details of any web request, and once you press play they may
+      store or read cookies or similar identifiers under
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's privacy policy</a>.
+      We don't receive what you watch there. Each video credits the person who made it.
+    </p>
   </section>
 
   <section id="not-collect">
     <div class="sec-head"><span class="sec-num">3</span><h2>Information we do not collect</h2></div>
     <p>The app does not collect, request, or have access to:</p>
     <ul>
-      <li>Your name, email address, or phone number</li>
+      <li>Your phone number or home address</li>
+      <li>Your password — Google or Apple handles the sign-in and we never see it</li>
       <li>Your location</li>
       <li>Your contacts, photos, camera, or microphone</li>
       <li>Advertising identifiers (Apple's IDFA or Google's Advertising ID) — we've specifically turned this off, and the app shows no advertising</li>
@@ -550,7 +594,8 @@
     </ul>
     <p>
       We do collect basic, anonymous usage analytics — see Section 2.4 for exactly what
-      that includes and why it's separate from everything else on this list. If you send us
+      that includes and why it's separate from everything else on this list. The account details
+      we <em>do</em> receive when you sign in are listed in Section 2.2. If you send us
       an email to report a job listing (Section 2.7), we receive the email address you send
       it from.
     </p>
@@ -562,11 +607,12 @@
     <ul>
       <li>Save your quiz progress and streak between sessions, on your own device</li>
       <li>Show quiz content (questions, categories, app text) that stays current without needing an app update</li>
-      <li>Display leaderboard rankings, only for people who've opted in</li>
+      <li>Let you sign in and keep the parts of the app that need an account behind it (Section 2.2)</li>
       <li>Show a required-update notice if a critical fix is ever released</li>
       <li>Send the push notifications you've chosen to turn on (Section 2.5)</li>
       <li>Show job listings for the state you pick, and remember your saved jobs on your device (Section 2.6)</li>
       <li>Review a job listing you've reported to us (Section 2.7)</li>
+      <li>Play the Clinical Skills videos you choose to open (Section 2.8)</li>
       <li>Understand overall app usage (Section 2.4), so we know what's working and what to fix or improve next</li>
     </ul>
   </section>
@@ -575,7 +621,7 @@
     <div class="sec-head"><span class="sec-num">5</span><h2>Who we share information with</h2></div>
     <p>
       We do not sell your information, and we do not share it with advertisers or data
-      brokers. The app's content, optional leaderboard, and usage analytics (Section 2.4)
+      brokers. The app's content, sign-in accounts, saved leaderboard entries, and usage analytics (Section 2.4)
       all run on <strong>Google Firebase</strong>, which acts as our infrastructure
       provider — the same way a filing cabinet stores paper without reading it. Firebase's
       own privacy terms are available at
@@ -583,9 +629,11 @@
     </p>
     <p>
       Job listings come from <strong>Adzuna</strong>, and the pages you open from them
-      belong to Adzuna and to employers (Section 2.6). Push notifications travel through
+      belong to Adzuna and to employers (Section 2.6). Sign-in goes through Google or Apple, who
+      learn that you signed in to Prep4CNA, as with any app that offers their sign-in (Section 2.2).
+      Skills videos are played by YouTube (Section 2.8). Push notifications travel through
       Firebase Cloud Messaging and Apple's and Google's push services (Section 2.5). We do
-      not give any of these companies your quiz progress, exam results, leaderboard data, or
+      not give any of these companies your quiz progress, exam results, or
       anything else described above as staying on your device.
     </p>
   </section>
@@ -596,16 +644,16 @@
       <li><strong>Clear your local progress</strong> any time from Profile → Reset Progress. This immediately and permanently erases your saved answers, streak and exam results from your device.</li>
       <li><strong>Turn notifications off</strong> any time from Profile → Notifications, or in your phone's settings.</li>
       <li><strong>Remove a saved job</strong> by tapping its bookmark again. Saved jobs and your chosen state are also erased when you uninstall the app.</li>
-      <li><strong>Leave the leaderboard off entirely</strong> by simply never setting a nickname — nothing about your device is ever shared publicly.</li>
-      <li><strong>Request removal of your leaderboard entry</strong> by contacting us (Section 11) with your nickname. We'll remove it.</li>
+      <li><strong>Sign out</strong> any time from Profile → Account.</li>
+      <li><strong>Delete your account</strong> any time from Profile → Account → Delete account. You confirm with Google or Apple once more, and the account record in Firebase is permanently deleted (for Apple accounts, the Sign in with Apple link is revoked too). Your answers on the phone are not touched; use Reset Progress for those.</li>
+      <li><strong>Request removal of an old leaderboard entry</strong> by contacting us (Section 11) with your nickname. We'll remove it.</li>
     </ul>
     <div class="callout flag">
       <span class="callout-label">Being upfront</span>
       <p>
-        Leaderboard entries can currently only be removed by contacting us directly — there
-        isn't yet a self-service delete button inside the app for a leaderboard entry
-        specifically (local progress reset is instant and self-service, per above). We
-        process removal requests promptly.
+        Deleting your account is self-service, inside the app. Old leaderboard entries from
+        versions before 1.3.0 are different: they can only be removed by contacting us
+        directly. We process removal requests promptly.
       </p>
     </div>
   </section>
@@ -615,8 +663,9 @@
     <p>
       Local progress is retained on your device until you reset it or uninstall the app.
       Saved jobs, your chosen state and recently viewed job lists stay on your device until
-      you remove them or uninstall the app. Leaderboard entries are retained until you
-      request removal (Section 6) or the leaderboard feature is discontinued. Emails you
+      you remove them or uninstall the app. Your account record is kept until you delete your
+      account (Section 6). Old leaderboard entries are kept until you ask us to remove yours
+      (Section 6) or we decide to delete them all. Emails you
       send to report a job listing are kept only as long as needed to review the listing.
     </p>
   </section>
@@ -625,18 +674,19 @@
     <div class="sec-head"><span class="sec-num">8</span><h2>Children's privacy</h2></div>
     <p>
       Prep4CNA is designed for adults preparing for professional exam prep and is not directed at children. We do not knowingly collect information from
-      children under 13.
+      children under 13. Signing in requires a Google or Apple account, which have their own age
+      requirements; if we learn that a child under 13 has an account, we'll delete it.
     </p>
   </section>
 
   <section id="security">
     <div class="sec-head"><span class="sec-num">9</span><h2>Security</h2></div>
     <p>
-      Leaderboard data is protected by access rules that only allow a device to write its
-      own entry, verified through the anonymous identifier described in Section 2.2 — no
-      one can edit or impersonate another person's score. Quiz content and job listings are
-      readable by the app but not editable by it. No method of transmission or storage is 100% secure, but
-      we don't collect anything more sensitive than a self-chosen nickname and a score.
+      Sign-in is handled by Google and Apple through Firebase Authentication; the app never
+      sees your password. Quiz content and job listings are readable by the app but not
+      editable by it, and access rules limit what the app can write to our database. No
+      method of transmission or storage is 100% secure, but the account details we hold are
+      limited to the items in Section 2.2.
     </p>
   </section>
 
@@ -652,14 +702,14 @@
   <section id="contact">
     <div class="sec-head"><span class="sec-num">11</span><h2>Contact us</h2></div>
     <p>
-      Questions about this policy, a leaderboard removal request, or a job listing you'd like
-      us to review can be sent to
+      Questions about this policy or your account, a request to remove an old leaderboard entry,
+      or a job listing you'd like us to review can be sent to
       <span class="fill">info@ebold.tech</span>
     </p>
   </section>
 
   <footer class="colophon">
-    <p>Prep4CNA · Privacy Policy · Effective October 8, 2026</p>
+    <p>Prep4CNA · Privacy Policy · Effective October 14, 2026</p>
   </footer>
 </div>
 </body>
